@@ -3,6 +3,7 @@ package com.example.perifericos_ejercicio.View.components
 import android.net.Uri
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
@@ -28,12 +29,13 @@ fun ImagenInteligente(imagenUri: Uri?){
             modifier = Modifier
                 .size(150.dp)
                 .clip(CircleShape)
+
         )
     }else{
         Icon(
             imageVector = Icons.Default.AccountCircle,
             contentDescription = "Icono de perfil por defecto",
-            tint = Color.Gray,
+            tint = Color.White,
             modifier = Modifier
                 .size(150.dp)
                 .clip(CircleShape)
